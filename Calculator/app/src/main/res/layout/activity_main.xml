@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_main"
     tools:context=".MainActivity">
 
     <EditText
@@ -12,6 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:textColor="@color/text_primary"
         android:inputType="number"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -27,6 +29,7 @@
         android:id="@+id/editTextNumber2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/text_primary"
         android:ems="10"
         android:inputType="number"
         android:visibility="visible"
@@ -63,6 +66,7 @@
     <EditText
         android:id="@+id/editTextNumber3"
         android:layout_width="wrap_content"
+        android:textColor="@color/text_primary"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number"
