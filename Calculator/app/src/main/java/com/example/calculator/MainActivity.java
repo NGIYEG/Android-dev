@@ -1,6 +1,5 @@
 package com.example.calculator;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -26,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    @SuppressLint("SetTextI18n")
     public void Add(View v) {
         EditText et1 = findViewById(R.id.editTextNumber);
         EditText et2 = findViewById(R.id.editTextNumber2);
@@ -35,10 +33,9 @@ public class MainActivity extends AppCompatActivity {
         int n1 = Integer.parseInt(et1.getText().toString());
         int n2 = Integer.parseInt(et2.getText().toString());
 
-        et3.setText("Total Value " + (n1 + n2));
+        et3.setText(String.valueOf(n1 + n2));
     }
 
-    @SuppressLint("SetTextI18n")
     public void Subtract(View v) {
         EditText et1 = findViewById(R.id.editTextNumber);
         EditText et2 = findViewById(R.id.editTextNumber2);
@@ -47,9 +44,8 @@ public class MainActivity extends AppCompatActivity {
         int n1 = Integer.parseInt(et1.getText().toString());
         int n2 = Integer.parseInt(et2.getText().toString());
 
-        et3.setText("Subtract Value " + (n1 - n2));
+        et3.setText(String.valueOf(n1 - n2));
     }
-
 
     public void Exit(View v) {
         finish();
