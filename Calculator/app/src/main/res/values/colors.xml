@@ -2,5 +2,5 @@
     <color name="bg_main">#F5F5F5</color>
     <color name="text_primary">#212121</color>
     <color name="button_bg">#6200EE</color>
-    <color name="button_text">#000000</color>
+    <color name="button_text">#f2f2f2</color>
 </resources>
